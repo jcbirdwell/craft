@@ -1,0 +1,15 @@
+[project]
+name = "murmur2"
+version = "0.1.0"
+description = "python bindings for C++ implementation of murmur2 hash function"
+requires-python = ">=3.13"
+dependencies = []
+
+[build-system]
+requires = ["scikit-build-core>=0.11", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+# Ensures the built binary is placed in the correct subfolder
+cmake.build-type = "Release"
+wheel.expand-macos-universal-tags = true

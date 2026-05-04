@@ -1,0 +1,18 @@
+[project]
+name = "craft"
+version = "0.1.0"
+description = "multiplatform modpack gen"
+authors = [{email="jcbirdwell@gmail.com"}]
+license-files = ['LICENSE']
+license="MIT"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "murmur2",
+    "psycopg[pool]>=3.3.3",
+    "pydantic>=2.13.3",
+    "requests>=2.33.1",
+]
+
+[tool.uv.sources]
+murmur2 = { path = "murmur2_pkg" }
